@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>untitled</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="">
+	<!-- Date: 2016-07-14 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+<form id="my-form">
+	<fieldset>
+		<label>
+			Name:
+		</label>
+		<input type="text" id="user-name">
+	</fieldset>
+	
+	<fieldset>
+		<label>
+			Email:
+		</label>
+		<input type="email" id="user-email">
+	</fieldset>
+	
+	<fieldset>
+	<label>
+		Happy?
+	</label>
+	<input type="checkbox" id="user-happy">
+	</fieldset>
+	
+    <fieldset>
+	<label>
+		Country:
+		</label>
+		<select id="user-country">
+			<option value="us" name"The Grand Ol' U.S.A.">US</option>
+			<option value="ca" name"Oh, Canada">CA</option>
+			<option value="mx" name"Mexico">MX</option>
+			</select>
+	</fieldset>
+	<fieldset>
+		<button id="form-submit">Click Submit</button>
+	</fieldset>	
+	</form>
+	<div id="summary">
+		<p>
+		Your name is <span id="name-result"></span>. Your email address is <span id="email-result"></span>. You <span id="happy-result"></span> happy. And you live in <span id="country-result"></span>.
+		</p>	
+	</div>
+</body>
+</html>
