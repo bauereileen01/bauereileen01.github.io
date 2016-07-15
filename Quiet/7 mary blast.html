@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>7</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="">
+	<!-- Date: 2016-07-15 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="http://velocityjs.org/build/jquery.velocity.min.js"></script>
+	<script src="http://velocityjs.org/build/velocity.ui.js"></script>
+	<script src="http://velocityjs.org/blast/build/jquery.blast.js"></script>
+	<script>
+	// Colors the paragraph
+	$(function() {
+	  function rand(min, max) {
+	    return parseInt(Math.round(min + Math.random() * (max - min)));
+	  }
+
+	  $('#btn').on('click', function () {
+	    // Blasts the paragraph
+	    var words = $('p').blast({
+	      delimiter: 'word',
+	      tag: 'em'
+	    });
+
+	     // Gives a random color to every word
+	    words.each(function() {
+	      $(this).css('color', 'rgb(' + rand(0, 255) + ', ' + rand(0, 255) + ', ' + rand(0, 255) + ')');
+	    });
+
+	   });
+
+	   $('#btn2').on('click', function () {
+	       $('p').blast(false);
+	   });
+	});
+	</script>
+	
+	<script>
+	
+	body {
+	  text-align: center;
+	}
+
+	button {
+	  font-size: 20px;
+	  color: black;
+	}
+
+	.p {
+	  margin-top: 120px;
+	  font-size: 13px;
+	}
+	$("div").blast({ delimiter: "word" , customClass: "myClass" });
+	</script>
+</head>
+<body>
+
+	<div id="example">
+		<span>
+		Mary had a little lamb,<br>
+		His fleece was white as snow,<br>
+		And everywhere that Mary went,<br>
+		The lamb was sure to go.<br>	    
+		</span>
+	</div>
+	<button id="btn">BLAST TEXT</button>
+	
+</body>
+</html>

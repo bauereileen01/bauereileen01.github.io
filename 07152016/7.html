@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>7</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="">
+	<!-- Date: 2016-07-15 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+	var line="Mary had a little lamb His fleece was white as snow And everywhere that Mary went The lamb was sure to go.";
+	var lineArray = line.split(" ");
+	var CurrWord = 0;
+	var randomRed = generateRandomColor();
+	var randomGreen = generateRandomColor();
+	var randomBlue = generateRandomColor();
+
+	var RandomColor = "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
+	$("#rhyme").css("background-color: "+RandomColor);
+	function generateRandomColor() {
+		return Math.round(Math.random() * 150);
+	}
+	$("#next-word").click(function(e) {
+		$("#word").text(lineArray[CurrWord]);
+		CurrWord++;
+		if (CurrWord == lineArray.length) {
+			CurrWord = 0;
+		}
+		e.preventDefault();
+	});
+	});
+	</script>
+
+</head>
+<body>
+<style>
+	#rhyme
+	{
+		width: 400px;
+		height: 100px;
+		background-color: #4455599;
+	} 
+</style>
+	<div id="rhyme">
+	<div id="word"></div>
+	<button id="next-word">Next Word</button>
+  </div>	
+</body>
+</html>
