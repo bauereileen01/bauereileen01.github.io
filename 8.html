@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>7</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="">
+	<!-- Date: 2016-07-15 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script>
+	var n = 0; //Hold a place for a number, make it equal zero at first.
+
+	$(document).ready(function(){ //When [the] document [is] ready
+		for(var i=0;i<10;i++) //Start a loop. 1) Start at 0. 2) Go until ten. 3) Increment by one.
+		{ //Denote what to do in the loop.
+			//Take the container, appending a div, with the class "block".
+			$("#container").append("<div class='block'></div>");  
+			//Hold a place. Make it equal to the most recently added block.
+			var block = $(".block").last(); 
+			//Call the "move the block right" function and pass the most recently added block.
+			moveBlockRight(block);
+		}//Closing the for loop
+	});//Closing the ready event function
+
+	function moveBlockRight(block)
+	{
+		n++;//Incrementing n (which is the block count).
+		// 1) Take the most recently added block. 
+		// 2) Make it visible (over half a second).
+		// 3) Wait for one second per block count.
+		// 4) Move it right 500px;
+		block.fadeIn(500).delay(1000*n).animate({"left":"500px"});
+	}
+	</script>
+
+</head>
+<body>
+<style>
+#container
+{
+	position: absolute;
+}
+
+.block /*a square*/
+{
+	width: 100px; /*100px wide*/
+	height: 100px; /*100px tall*/
+	position: absolute; 
+	display: none; /*it's invisible*/
+	background-color: black; /*black*/
+}
+</style>
+<div id="container">
+			
+	</div>
+</body>
+</html>
