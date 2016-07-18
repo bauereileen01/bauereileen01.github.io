@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Maria Sodano Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/085/2c5/0048852.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="home.js"></script>
+</head>
+<div id="blue">
+		<a id="name" href="index.html">MS</a>
+<body>
+	<nav>
+		<a class="sidebar" href="work.html">Work</a>
+		<a class="sidebar" href="bio.html">Bio</a>
+		<a class="sidebar" href="images/resume.pdf">Resume</a>
+		<a class="sidebar" href="mailto:sodanomaria@gmail.com">Email</a> 
+	</nav>
+</div>
+
+<!--end sidebar-->
+
+<section>
+	<a href="vu.html">
+		<img class="slide" src="images/vu.png" alt="Vu application">
+	</a>
+	<a href="100.html">
+		<img class="slide" src="images/100views.jpg" alt="100 Views Infographic">
+	</a>
+	<a href="miami">
+		<img class="slide" src="images/miami.png" alt="Miami Logo Redesign">
+	</a>
+	<a href="amtrak">
+		<img class="slide" src="images/table.jpg" alt="Amtrak Timetable Redesign">
+	</a>
+	<script>
+		var slideIndex = 0;
+	carousel();
+
+	function carousel() {
+    	var i;
+   	 	var x = document.getElementsByClassName("slide");
+    	for (i = 0; i < x.length; i++) {
+      	x[i].style.display = "none"; 
+    	}
+    	slideIndex++;
+    	if (slideIndex > x.length) {slideIndex = 1} 
+    	x[slideIndex-1].style.display = "block"; 
+   	 	setTimeout(carousel, 5000);
+		}
+	</script>
+</section>
+
+<!--footer-->
+
+<section class="links">
+	<a class="social" href="http://linkedin.com/in/mariasodano">
+		<img id="in" src="images/linkedin.png" alt="LinkedIn Profile">
+	</a>
+<a class="social" href="http://behance.net/mariasodano">
+	<img id="behance" src="images/behance.png" alt="Behance profile">
+</a>
+<a class="social" href="https://github.com/mariasoda">
+	<img id="git"src="images/github.png" alt="GitHub profile">
+</a>
+</section>
+</body>
+</html>

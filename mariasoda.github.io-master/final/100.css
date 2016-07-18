@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*start of my code*/
+
+.sidebar, #name{
+	text-decoration: none;
+	background-color: #3333ff;
+	color: #ffffff;
+	font-family: sans-serif;
+}
+
+#name{
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 32px;
+    top: 4%;
+    left: 5%;
+    margin-top: 0px;
+	position: absolute;
+	padding: 0px 10px 0px 20px;
+}
+
+nav{
+	position: fixed;
+    top: 15%;
+    left: 2%;
+    padding-left: 2px;
+}
+
+.sidebar{
+	font-size: 20px;
+	padding: 4px;
+	display: block;
+}
+
+#blue{
+	background-color: #3333ff;
+	width: 215px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0%;
+}
+
+#name:hover, .sidebar:hover{
+	color: #ffccff;
+}
+
+.links{
+	position: fixed;
+	left: 2%;
+	bottom: 5%;
+}
+.social{
+	display: inline-block;
+	background-color: #000000;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.social:hover{
+	background-color: #ffccff;
+}
+
+#in{
+	position: absolute;
+	left: 3px;
+	top: 2px;
+	width: 25px;
+}
+
+#behance{
+	position: absolute;
+	width: 25px;
+	left: 3px;
+	top: 3px;
+}
+
+#git{
+	position: absolute;
+	width: 31px;
+	top: -1px;
+}
+
+@media (min-width: 200px) and (max-width: 640px){
+	#blue{width: 100%; bottom: 85%;}
+	.slide{width: 100%; bottom:55%; float: none;}
+	.sidebar{display: inline-block;}
+	nav{top:8%;}
+	.links{top:15%; right: 5%;}
+
+}
+
+@media (min-width: 641px) and (max-width: 823px){
+	#name{padding-left: 15px; font-size: 20px;}
+	.sidebar{font-size: 14px;}
+	.social{width: 25px; height: 25px;}
+	#in{width: 20px;}
+	#behance{width: 20px;}
+	#git{width: 25px;}
+}
+
+@media (min-width: 824px) and (max-width: 982px){
+	#name{font-size: 24px;}
+	.sidebar{font-size: 16px;}
+}

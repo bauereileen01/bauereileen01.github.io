@@ -1,0 +1,238 @@
+body
+{ margin: 0px; }
+
+.text
+{
+color: white; 
+font-size: 30px;
+font-family: Baskerville, sans-serif;
+text-shadow: 0px 0px 20px white;
+text-align: center;
+cursor: pointer; /* turns the cursor into a pointer so you know you can click */
+position: absolute;
+}
+
+.fact
+{
+color: white;
+font-size: 20px;
+font-family: Baskerville, sans-serif;
+text-shadow: 0px 0px 10px;
+text-align: center;
+position: absolute;
+}
+
+#container_1
+{  }
+
+	#picture_1
+	{
+	background-image: url(https://66.media.tumblr.com/6aa540b210c49479047a6da999902c31/tumblr_mmehm5oiZG1rkywkpo1_400.gif);
+	background-size: cover;
+	width: 100%;
+	height: 860px;
+	}
+
+	#click
+	{
+	color: white;
+	font-size: 18px;
+	font-family: Baskerville, sans-serif;
+	text-shadow: 0px 0px 10px;
+	text-align: center;
+	padding: 2px;
+	margin: 405px 0px 0px 752px;
+	position: absolute;
+	}
+
+	#twinkle_A 
+	{
+	padding: 2px;
+	margin: 450px 0px 0px 685px;
+	}
+
+	#fact_1 
+	{ margin: 500px 0px 0px 637px; }
+
+#container_2
+{  }
+
+	#picture_2
+	{
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 1020px;
+	}
+
+	#how_A 
+	{
+	padding: 2px;
+	margin: 385px 0px 0px 200px;
+	}
+
+	#fact_2
+	{ margin: 433px 0px 0px 135px; }
+
+#container_3
+{  }
+
+	#picture_3
+	{
+	background-image: url(http://totallyhistory.com/wp-content/uploads/2011/12/Starry_Night_Over_the_Rhone1.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 880px;
+	}
+
+	#up 
+	{
+	padding: 2px;
+	margin: 260px 0px 0px 750px;
+	}
+
+	#fact_3
+	{ margin: 305px 0px 0px 680px; }
+
+#container_4
+{  }
+
+	#picture_4
+	{
+	background-image: url(http://static1.squarespace.com/static/52d45310e4b0227fde384ba6/52d56f5ce4b0d4862e3f1859/5339988de4b08605da33cd80/1404782097913/NYC_2013August03_404_edit.jpg?format=1000w);
+	background-size: cover;
+	width: 100%;
+	height: 880px;
+	}
+
+	#like
+	{
+	padding: 2px;
+	margin: 187px 0px 0px 595px;
+	}
+
+	#fact_4
+	{ margin: 235px 0px 0px 573px; }
+
+#container_5
+{  }
+
+	#picture_5
+	{
+	background-image: url(http://images.fineartamerica.com/images/artworkimages/mediumlarge/1/starry-night-alex-ruiz.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	position: absolute;
+	}
+
+	#twinkle_B 
+	{
+	padding: 2px;
+	margin: 565px 0px 0px 85px;
+	}
+
+	#how_B
+	{
+	padding: 2px;
+	margin: 605px 0px 0px 85px;
+	}
+
+	#form /* this is the whole form */
+	{
+	position: absolute;
+	margin: 660px 0px 0px 95px;
+	}
+
+	.line
+	{
+	border: none;
+	background-color: none;
+	padding: 5px;
+	}
+
+	#question /* this is just for the question */
+	{
+	color: white;
+	font-size: 20px;
+	font-family: Baskerville, sans-serif;
+	text-shadow: 0px 0px 10px;
+	}
+
+	#guess /* this is the selector list */
+	{
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-family: Baskerville, sans-serif;
+	font-size: 16px;
+	text-shadow: 0px 0px 3px;
+	cursor: pointer; /* turns the cursor into a pointer so you know you can click */
+	}
+
+	#submit /* this is the button */
+	{
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	font-size: 16px;
+	font-family: Baskerville, sans-serif;
+	text-shadow: 0px 0px 3px;
+	padding: 3px 5px 3px 5px;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 18px;
+	cursor: pointer; /* turns the cursor into a pointer so you know you can click */
+	}
+
+	#answer
+	{
+	color: white;
+	font-size: 1px;
+	font-family: Baskerville, sans-serif;
+	text-shadow: 0px 0px 10px;
+	position: absolute;
+	margin: 750px 0px 0px 100px;
+	}
+
+
+
+
+
+/* THIS STUFF IS FOR THE FIVE DOTS */
+
+.returns
+{
+position: fixed;
+right: 30px; /* distance from the right */
+z-index: 100; /* it's #100 in stacking, basically on top of everything else */
+padding: 2px;
+border: none;
+text-align: center;
+font-size: 30px; /* how big the arrow is */
+color: white;
+cursor: pointer; /* so you know you can click on it */
+text-decoration: none; /* gets rid of that weird underline */
+opacity: 0.8; /* when there's no hovering, it's kind of translucent */
+}
+
+.returns:hover /* when you hover over the dot, the dot does this */
+{
+opacity: 1; /* becomes opaque */
+text-shadow: 0px 0px 7px; /* glows */
+}
+
+
+#back_to_one
+{ bottom: 140px; } /* distance from the bottom */
+
+#back_to_two
+{ bottom: 110px; }
+
+#back_to_three
+{ bottom: 80px; }
+
+#back_to_four
+{ bottom: 50px; }
+
+#back_to_five
+{ bottom: 20px; }
+
