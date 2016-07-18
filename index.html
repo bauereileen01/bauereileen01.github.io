@@ -5,8 +5,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
 
 <script src="index.js"></script>
+
+<script>
+function myFunction() {
+    var age, voteable;
+    age = document.getElementById("age").value;
+    voteable = (age < 18) ? "Too young":"Old enough";
+    document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
 </script>
-<style>
+</head>
+
+<body>
+
+<style type="text/css">
 	body
 	{
 	color: black; 
@@ -14,8 +26,34 @@
 	text-shadow: 0px 0px 20px white;
 	font-family: Baskerville, serif;
 	margin: 0px;
+        width: 100%;
+	height: 200px;
 	}
 
+        #name
+	{
+	color: black; 
+	font-size: 28px;
+	text-shadow: 0px 0px 20px white;
+	font-family: Baskerville, serif;
+	margin: 0px;
+        width: 100%;
+	height: 200px;
+	}
+        
+       #container	{}
+	#main
+	{
+	background-image: url(White1.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 1000px;
+	color: white;
+	padding: 2px;
+	margin: 800px 1000px 0px 100px;
+	position: absolute;
+	}
+                
 	#container_1	{  }
 		#picture_1
 		{
@@ -27,11 +65,10 @@
 		height: 690px;
 		}
 
-		#MaryLamb_A 
+		#A 
 		{padding: 0px 0px 0px 0px;}
-
-
-	#container_2	{  }
+                
+         #container_2	{  }
 		#picture_2
 		{
 		font-style: normal;
@@ -42,9 +79,9 @@
 		height: 920px;
 		}
 
-		#MaryLamb_B 
+		#B 
 		{padding: 200px 0px 0px 0px;}
-
+                
 	#container_3	{  }
 		#picture_3
 		{
@@ -56,9 +93,9 @@
 		height: 850px;
 		}
 
-		#MaryLamb_C 
+		#C 
 		{padding: 400px 0px 0px 0px;}
-
+          
 	#container_4	{  }
 		#picture_4
 		{
@@ -70,70 +107,20 @@
 		height: 800px;
 		}
 
-		#MaryLamb_D
-		{padding: 650x 0px 400px 0px;}
+		#D
+		{padding: 400x 400px 0px 0px;}
 
-	#container_5	{	}
-		#picture_5
-		{
-		background-image: url(http://www.warrenphotographic.co.uk/photography/bigs/34083-Lamb-lying-down-with-head-up-white-background.jpg);
-		background-size: cover;
-		width: 100%;
-		height: 900px;
-		position: absolute;
-		}
-
-		#MaryLamb_E 
-		{
-		color: BlueViolet;
-		padding: 2px;
-		margin: 800px 1000px 0px 100px;
-		position: absolute;
-		}
-
-        #container_6	{	}
-		#picture_6
-		{
-		background-image: url(https://images-na.ssl-images-amazon.com/images/I/51GHGV6BKTL.jpg);
-		background-size: cover;
-		width: 100%;
-		height: 900px;
-		position: absolute;
-		}
-
-		#MaryLamb_F 
-		{
-		color: Black;
-		padding: 2px;
-		margin: 800px 1000px 0px 100px;
-		position: absolute;
-		}
-
-        #container	{	}
-		#main
-		{
-		background-image: url(White1.jpg);
-		background-size: cover;
-		width: 100%;
-		height: 1000px;
-		color: white;
-		padding: 2px;
-		margin: 800px 1000px 0px 100px;
-		position: absolute;
-		}
-  
 </style>
 
-<style id="foo-color" type="text/css"></style>
-</head>
-
-<body>
+<div>
+<p id="name"></p>
+</div>
 <div id="container_1">
     <div id="picture_1">
-	<div id="MaryLamb_A">
+	<div id="A">
             <p id="content-1">
-		Mary had a little lamb,<br>
-		His fleece was white as snow,<br>
+                Mary had a little lamb,<br>
+                His fleece was white as snow,<br>
 		And everywhere that Mary went,<br>
 		The lamb was sure to go.<br></p>
 	</div>
@@ -142,7 +129,7 @@
 
 <div id="container_2">
     <div id="picture_2">
-	<div id="MaryLamb_B"> 
+	<div id="B"> 
 	<p id="content-2">
 	He followed her to school one day,<br>
 	Which was against the rule,<br>
@@ -154,7 +141,7 @@
 
 <div id="container_3">
     <div id="picture_3">
-	<div id="MaryLamb_C"> 
+	<div id="C"> 
 	<p id="content-3">
 	And so the teacher turned it out,<br>
 	But still it lingered near,<br>
@@ -164,9 +151,10 @@
     </div>	
 </div>
 
+
 <div id="container_4">
     <div id="picture_4">
-	<div id="MaryLamb_D"> 
+	<div id="D"> 
 	<p id="content-4">
 	"Why does the lamb love Mary so?"<br>
 	The eager children cry.<br>
@@ -176,32 +164,17 @@
     </div>
 </div>
 
-<div id="container_5">
-    <div id="picture_5">
-	<div id="MaryLamb_E"> 
-	<p id="content-5">
-        Mary had a little lamb<br>
-        Its fleece was white as snow<br>
-        And everywhere that Mary went<br>
-        The lamb was sure to go<br></p>
-	</div>
-    </div>
-</div>
-
-<div id="container_6">
-    <div id="picture_6">
-	<div id="MaryLamb_F"> 
-	<p id="content-6">Baaaaa... Humbug</p>
-	</div>
-    </div>
-</div>
 
 <div class="content">
     <div class="main">
-      <h1>by...</h1>
+      <h2>by...</h2>
       <p>Eileen Bauer  <b>&#60;bauereileen01@yahoo.com&#62;</b></p>
     </div>
 </div>
+
+<button id="btn">Animate height & width</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
 
 <body>
 </html>
