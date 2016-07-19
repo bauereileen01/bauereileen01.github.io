@@ -5,12 +5,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script>
 
-		$(document).ready(function(){
-			$.ajax({
-				url: "https://api.spotify.com/v1/search?q=prince&type=album",
-				success: ajaxHandler
+	$(document).ready(function() {
+	$("#form-submit").click(function(e){
+		e.preventDefault();
+		})
+			
+	var album = $("#album").val();
+	console.log(album+" is the album search field");
+
+	$.ajax({
+			url: "https://api.spotify.com/v1/search",
+			data:{
+				q: album,
+				type: "album",
+				limit: 50,
+				},
+			success: ajaxHandler
 			});
-		});
 
 		function ajaxHandler(data)
 		{
@@ -27,6 +38,12 @@
 
 </head>
 <body>
+<div>
+<form action="" method="get">
+Album Name: <input type="text" id="album"/><br/>
+ 		<button id="form-submit">Click Submit</button>
+  </form>
+</div>
 	<textarea id="api_result" cols=60 rows=20></textarea>
 </body>
 </html>
