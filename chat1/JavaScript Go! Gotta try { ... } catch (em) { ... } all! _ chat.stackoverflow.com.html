@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <title>JavaScript Go! Gotta try { ... } catch (em) { ... } all! | chat.stackoverflow.com</title>
+        <link rel="shortcut icon" href="http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=d8"><link rel="apple-touch-icon" href="http://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=d8"><link rel="search" type="application/opensearchdescription+xml" title="Chat for chat.stackoverflow.com" href="/opensearch.xml">
+
+                            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+        <script type="text/javascript" src="//cdn-chat.sstatic.net/chat/Js/master-chat.js?v=7f410383d77e"></script>
+
+        <link rel="stylesheet" href="//cdn-chat.sstatic.net/chat/css/chat.stackoverflow.com.css?v=fa72aaa44f11"> 
+        <base target="_blank">
+        
+<script type="text/javascript">
+    function IMAGE(f) { return ("//cdn-chat.sstatic.net/chat/img/" + f); }
+</script>
+        
+    </head>
+        <body id="chat-body">
+        <div id="jplayer"></div>
+        <div id="loading"><div id="loading-message">
+            Loading JavaScript Go! Gotta try { ... } catch (em) { ... } all!<br />
+            Just a second&hellip;
+        </div></div>
+        <div id="container">
+            <div id="feed-ticker" style="display: none;">
+                 <div id="feed-ticker-icon"><img src="//cdn-chat.sstatic.net/chat/Img/feed-icon128.png?v=7fa832f0199b" /></div>
+                 <div id="dismiss-ticker">dismiss</div>
+                <h2><a href="/rooms/info/17/javascript-go-gotta-try-catch-em-all?tab=feeds">New feed items</a></h2>
+                <div id="ticker-items"></div>
+            </div>
+            <span id="getmore" class="button" title="load a few more earlier chat messages">load older messages</span>
+            <a class="button" href="/transcript/17" title="view the complete archived chat history for this room">full transcript</a>
+                <a class="button" title="Only show starred messages, and messages to the current user" href="?highlights=true" target="_self">highlights</a>
+            <br /><br />
+            <div id="main">
+                <div id="chat"></div>
+                <div id="input-area">
+                    <div class="input-hint-container"><div class="input-hint"></div></div>
+                    <table width="100%" id="input-table"><tbody>
+                        <tr>
+                            <td rowspan="2" width="64">
+		                        <div id="active-user">
+			                        <div class="avatar user-gravatar64">
+                                        <img height="64" width="64"
+                                             src="//cdn-chat.sstatic.net/chat/Img/anon.png?v=6828b4d61e85"
+                                             srcset="//cdn-chat.sstatic.net/chat/Img/anon.png?v=6828b4d61e85 2x">
+                                    </div>
+		                        </div>
+                                <div title="You have a reply/mention" id="reply-count" style="visibility:hidden"></div>
+                                	                        </td>
+	                        <td class="chat-input" rowspan="2">
+		                        <div id="bubble">
+                                        You must be <a href="http://stackoverflow.com/users/login?returnurl=http%3a%2f%2fchat.stackoverflow.com%2frooms%2f17%2fjavascript-go-gotta-try-catch-em-all" target="_self">logged in</a> to talk. 
+                                        See the <a href="/faq">faq</a> for more information.
+                                </div>
+	                        </td>
+                            <td id="chat-buttons">
+	                        </td>
+                            <td id="footer-logo">
+                                <a href="http://stackoverflow.com" title="Stack Overflow"><img style="max-width:150px" src="http://cdn.sstatic.net/Sites/stackoverflow/img/logo.png?v=d8" alt="Stack Overflow"/></a>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="footer-legal" colspan="2" style="vertical-align: bottom; padding-top: 0px;">
+                                <a id="mini-help" href="/faq#formatting">help</a> | <a  href="/faq">faq</a> | <a href="http://stackexchange.com/legal">legal</a>
+                                | <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> | <a href="#" class="mobile-on">mobile</a>
+                            </td>
+                        </tr>
+                    </tbody></table>   
+                </div>
+                <div id="bottom"></div>
+                <div id="sidebar"><div id="sidebar-content">
+                    <div id="info"> 
+                        <div id="sound" title="set audio notification level"></div>
+		                <div class="fl">
+                            <a id="allrooms" class="button" href="/">all rooms</a>
+                        </div>
+                        <form method="get" action="/search">
+                            <input type="text" id="searchbox" name="q"/>
+                            <input type="hidden" name="room" value="17" />
+                        </form>
+                        <div style="height:0" class="clear-both">&nbsp;</div>
+                        <h1 id="roomtitle">
+                            <span id="roomname">JavaScript Go! Gotta try { ... } catch (em) { ... } all!</span>
+                        </h1>
+                        <div id="roomdesc">Topic: JavaScript, ECMAScript. Read this: <a href="http://javascriptroom.github.io/rules" rel="nofollow">javascriptroom.github.io/rules</a>. Before asking inform yourself on the XY problem <a href="http://goo.gl/taIqf" rel="nofollow">goo.gl/taIqf</a> | <a href="https://devdocs.io" rel="nofollow">devdocs.io</a> Documentation™ Helps. Room meta discussions: <a href="https://github.com/JavaScriptRoom/culture" rel="nofollow">github.com/JavaScriptRoom/culture</a></div>
+                        <div id="room-tags"><a class="tag" href="http://stackoverflow.com/tags/ecmascript/info">ecmascript</a> <a class="tag" href="http://stackoverflow.com/tags/ecmascript-next/info">ecmascript-next</a> <a class="tag" href="http://stackoverflow.com/tags/javascript/info">javascript</a> <a class="tag" href="http://stackoverflow.com/tags/node.js/info">node.js</a> <a class="tag" href="http://stackoverflow.com/tags/rlemon/info">rlemon</a> <a class="tag" href="http://stackoverflow.com/tags/snorlax/info">snorlax</a> <a class="tag" href="http://stackoverflow.com/tags/stop-flag-abuse/info">stop-flag-abuse</a></div>
+                        <div id="sidebar-menu">
+                                                        <a id="room-menu" title="more options for this room" href="/transcript/17/javascript-go-gotta-try-catch-em-all">room&#x25BC;</a> |
+                            <a id="about-room" title="about this room" href="/rooms/info/17/javascript-go-gotta-try-catch-em-all">info</a>
+                        </div>
+                    </div>
+                    <div id="widgets">
+                        <div class="sidebar-widget">
+                            <ul id="present-users" class="collapsible fixed-max clear-both"><li class="more"></li></ul>
+                        </div>
+                                <div class="sidebar-widget" id="room-ad">
+                                    <div class="fr msg-small">not the room you are looking for?</div>
+                                    <br class="cboth" />
+                                        <br class="cboth" />
+                                        <div><a href="/">There are other rooms</a>, with 244 users currently talking in 77 rooms.</div>
+                                </div>
+                                                <div class="sidebar-widget">
+                            <div class="fr msg-small">
+                                    <a href="/feeds/rooms/starred/17"><span class="feed-icon"> </span></a>
+                                starred <span class="more"></span>
+                                <span id="show-all-starred"> / <a href="/rooms/info/17/javascript-go-gotta-try-catch-em-all/?tab=stars">show all</a></span>
+                            </div>
+                            <br class="cboth" />
+                            <div id="starred-posts">
+                                <div class="votesummary">
+                                    <ul class="collapsible"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div></div> 
+
+            </div>
+        </div>
+
+        
+        <script type="text/javascript"> 
+            SERVER_TIME_OFFSET = 1469114183 - (new Date()).getTime() / 1000;
+            $(function() {
+                if (!CHAT.RoomUsers) {
+                    $("#loading-message").empty().html("<span style='color:#a00000'>Cannot start chat</span> because your browser has loaded an outdated JavaScript file.<br/><br>Please <b>reload this page</b> to ensure you have up-to-date data.")
+                    return;
+                }
+                var chat = StartChat({
+                    sound: {
+                        file: "//cdn-chat.sstatic.net/chat/so.mp3",
+                        vol: 65,
+                        swfPath: "//cdn-chat.sstatic.net/chat"
+                    },
+                    may_bookmark: false,
+                    ws: false,
+                    egg: "Cthulu",
+                    
+                    desktopNotify: false
+                    },
+                    0,
+                    {
+                        id: 17,
+                        host: '',
+                        deleted: false,
+                        frozen: false
+                    },
+                    null,
+                    false,
+                    false,
+                    {});
+                
+
+CHAT.RoomUsers.initPresent([
+
+    
+        {id: 774078, name: ("Sterling Archer"), email_hash: ("!https://i.stack.imgur.com/WvDon.jpg?s=128&g=1"), reputation: 12951, last_post: 1469113800,is_owner:true }
+    
+    
+        ,{id: 1348195, name: ("Benjamin Gruenbaum"), email_hash: ("f6dca2295546af21e1cde8e68f2d49bd"), reputation: 114482, last_post: 1469113707,is_owner:true }
+    
+    
+        ,{id: 829835, name: ("rlemon"), email_hash: ("!https://i.stack.imgur.com/N6iem.png?s=128&g=1"), reputation: 11633, last_post: 1469113687,is_owner:true }
+    
+    
+        ,{id: 1947276, name: ("little pootis"), email_hash: ("!https://i.stack.imgur.com/5YYk6.png?s=128&g=1"), reputation: 137, last_post: 1469113683}
+    
+    
+        ,{id: 956900, name: ("Luggage"), email_hash: ("4416acf0ee6259443ee3cca16d894d14"), reputation: 562, last_post: 1469113637,is_owner:true }
+    
+    
+        ,{id: 1839506, name: ("Caprica Six"), email_hash: ("!https://i.stack.imgur.com/Sej2t.jpg?s=128&g=1"), reputation: 1490, last_post: 1469113615,is_owner:true }
+    
+    
+        ,{id: 6032174, name: ("thepiercingarrow"), email_hash: ("!https://i.stack.imgur.com/2Ayv1.png?s=128&g=1"), reputation: 72, last_post: 1469113580}
+    
+    
+        ,{id: 785745, name: ("Kendall Frey"), email_hash: ("f9fc3249a341a64ee2721637915cd301"), reputation: 24415, last_post: 1469113563,is_owner:true }
+    
+    
+        ,{id: 263525, name: ("Denys S\u00E9guret"), email_hash: ("ec289925069b35f18f1230b90dc654e5"), reputation: 206756, last_post: 1469113546,is_owner:true }
+    
+    
+        ,{id: 4669968, name: ("gtzinos"), email_hash: ("!https://i.stack.imgur.com/1nbPN.jpg?s=128&g=1"), reputation: 440, last_post: 1469113522}
+    
+    
+        ,{id: 400654, name: ("Kevin B"), email_hash: ("afc1068910df4dd83c2fc3af0255af11"), reputation: 71311, last_post: 1469113482}
+    
+    
+        ,{id: 809950, name: ("GNi33"), email_hash: ("!https://i.stack.imgur.com/mIOhV.jpg?s=128&g=1"), reputation: 3690, last_post: 1469112798}
+    
+    
+        ,{id: 3027001, name: ("Ankur Anand"), email_hash: ("!https://i.stack.imgur.com/miTHV.jpg?s=128&g=1"), reputation: 1757, last_post: 1469112675}
+    
+    
+        ,{id: 1596138, name: ("Jhawins"), email_hash: ("!https://i.stack.imgur.com/SIjyi.jpg?s=128&g=1"), reputation: 1905, last_post: 1469112287}
+    
+    
+        ,{id: 2895710, name: ("edward torvalds"), email_hash: ("!https://i.stack.imgur.com/nKkPZ.jpg?s=128&g=1"), reputation: 197, last_post: 1469112169}
+    
+    
+        ,{id: 561731, name: ("Neal"), email_hash: ("5ba9dd877c8a4bc5995b2101908ae648"), reputation: 88768, last_post: 1469112085}
+    
+    
+        ,{id: 322395, name: ("Loktar"), email_hash: ("!https://i.stack.imgur.com/Bks1l.jpg?s=128&g=1"), reputation: 22751, last_post: 1469111822,is_owner:true }
+    
+    
+        ,{id: 2587646, name: ("DrakaSAN"), email_hash: ("c830084732c3059d087480aba79dec9e"), reputation: 1882, last_post: 1469111422}
+    
+    
+        ,{id: 1408759, name: ("ndugger"), email_hash: ("!https://i.stack.imgur.com/pcCED.jpg?s=128&g=1"), reputation: 1550, last_post: 1469111365,is_owner:true }
+    
+    
+        ,{id: 259953, name: ("Oliver Salzburg"), email_hash: ("ec198cb6fc38d98bb88dd390e0bed8e3"), reputation: 5744, last_post: 1469110316}
+    
+    
+        ,{id: 871050, name: ("Madara Uchiha"), email_hash: ("a7a50a9492be737b0c012a839338272a"), reputation: 81448, last_post: 1469109902,is_moderator:true ,is_owner:true }
+    
+    
+        ,{id: 4479807, name: ("Akil"), email_hash: ("!https://graph.facebook.com/100002520018137/picture?type=large"), reputation: 156, last_post: 1469109615}
+    
+    
+        ,{id: 3337752, name: ("Neoares"), email_hash: ("!https://i.stack.imgur.com/amtjk.jpg?s=128&g=1"), reputation: 334, last_post: 1469109510}
+    
+    
+        ,{id: 5026445, name: ("cswl"), email_hash: ("0d931b4570cdccc25ca9610a9c199a38"), reputation: 157, last_post: 1469109486}
+    
+    
+        ,{id: 44041, name: ("Filip Dupanovi\u0107"), email_hash: ("ef09ee2a5aaee27f3630e1842f30fbac"), reputation: 13895, last_post: 1469109424}
+    
+    
+        ,{id: 1461682, name: ("Mirko Cianfarani"), email_hash: ("!https://i.stack.imgur.com/2lUbT.jpg?s=128&g=1"), reputation: 1297, last_post: 1469109137}
+    
+    
+        ,{id: 1835379, name: ("Cerbrus"), email_hash: ("!https://i.stack.imgur.com/i63aC.gif?s=128&g=1"), reputation: 33711, last_post: 1469108996,is_owner:true }
+    
+    
+        ,{id: 3161092, name: ("towc"), email_hash: ("!https://i.stack.imgur.com/oVs5E.png?s=128&g=1"), reputation: 400, last_post: 1469108750}
+    
+    
+        ,{id: 116249, name: ("Patrick"), email_hash: ("708a683d5bb4268584636d6d2c9cbf98"), reputation: 10834, last_post: 1469108118}
+    
+    
+        ,{id: 1150599, name: ("corvid"), email_hash: ("!https://i.stack.imgur.com/ndWQ0.jpg?s=128&g=1"), reputation: 3349, last_post: 1469107827}
+    
+    
+        ,{id: 499214, name: ("Jan Dvorak"), email_hash: ("!https://i.stack.imgur.com/PObJM.png?s=128&g=1"), reputation: 18306, last_post: 1469106613}
+    
+    
+        ,{id: 731947, name: ("CS\u1D60"), email_hash: ("!https://i.stack.imgur.com/If34k.png?s=128&g=1"), reputation: 7138, last_post: 1469104994}
+    
+    
+        ,{id: 2818217, name: ("the digitalmouse"), email_hash: ("!https://i.stack.imgur.com/OzlwT.jpg?s=128&g=1"), reputation: 92, last_post: 1469103961}
+    
+    
+        ,{id: 318306, name: ("Eugene"), email_hash: ("!https://i.stack.imgur.com/8j7y2.jpg?s=128&g=1"), reputation: 2312, last_post: 1469101720}
+    
+    
+        ,{id: 851498, name: ("Florian Margaine"), email_hash: ("138a5bfc83f7df06b2701ccd722531c3"), reputation: 26775, last_post: 1469101422}
+    
+    
+        ,{id: 1391040, name: ("Nimphious"), email_hash: ("cd8d85fe8b326bc3815158879144382a"), reputation: 2392, last_post: 1469097145}
+    
+    
+        ,{id: 4615178, name: ("Baldr\u00E1ni"), email_hash: ("!https://i.stack.imgur.com/pmS0I.jpg?s=128&g=1"), reputation: 929, last_post: 1469095294}
+    
+    
+        ,{id: 1386166, name: ("phenomnomnominal"), email_hash: ("7ea079654bb159fdaa4043834688f57d"), reputation: 4232, last_post: 1469065827,is_owner:true }
+    
+    
+        ,{id: 6091685, name: ("jake"), email_hash: ("!https://i.stack.imgur.com/DMbiC.jpg?s=128&g=1"), reputation: 54, last_post: 1469055590}
+    
+    
+        ,{id: 298479, name: ("ThiefMaster"), email_hash: ("bc66db28aa7c3fa8e4ce4238b696dee9"), reputation: 182288, last_post: 1469048474,is_moderator:true ,is_owner:true }
+    
+    
+        ,{id: 3752557, name: ("fayzaan"), email_hash: ("99dc065446d494cd649abfad837c14f1"), reputation: 156, last_post: 1469034426}
+    
+    
+        ,{id: 2976823, name: ("Kamil Wozniak"), email_hash: ("2e61cdd146a7c827995819288b4c7086"), reputation: 364, last_post: 1469022131}
+    
+    
+        ,{id: 727208, name: ("tere\u0161ko"), email_hash: ("d2bba3700fd3a3e8cc12888edd980525"), reputation: 41356, last_post: 1469019177}
+    
+    
+        ,{id: 3588556, name: ("SJD"), email_hash: ("!https://i.stack.imgur.com/G66sW.png?s=128&g=1"), reputation: 1160, last_post: 1468955717}
+    
+    
+        ,{id: 860947, name: ("ton.yeung"), email_hash: ("!https://i.stack.imgur.com/WLi8a.png?s=128&g=1"), reputation: 1916, last_post: 1468863929}
+    
+    
+        ,{id: 216074, name: ("poke"), email_hash: ("609c93bafd659500f83fde04802a9be5"), reputation: 121631, last_post: 1468851204}
+    
+    
+        ,{id: 616717, name: ("Zhegan"), email_hash: ("fe1c5c7bee0a61db0b81d093e517ed28"), reputation: 637, last_post: 1468843720}
+    
+    
+        ,{id: 6220751, name: ("Tuvia"), email_hash: ("!https://i.stack.imgur.com/049RI.jpg?s=128&g=1"), reputation: 597, last_post: 1468614330}
+    
+    
+        ,{id: 1667460, name: ("nderscore"), email_hash: ("!https://i.stack.imgur.com/4GlI2.png?s=128&g=1"), reputation: 2617, last_post: 1467918614}
+    
+    
+        ,{id: 5159481, name: ("Beat"), email_hash: ("d7453a6a071f10db53f6ed34e56ddbaa"), reputation: 1321, last_post: 1467296894}
+    
+    
+        ,{id: 2153758, name: ("bwoebi"), email_hash: ("3659fff22e890aaa5d7b03e799f9047f"), reputation: 14781, last_post: 1466868006}
+    
+    
+        ,{id: 889949, name: ("DaveRandom"), email_hash: ("8609c7056e725f9e8c03c594b831353e"), reputation: 55464, last_post: 1461833006}
+    
+    
+        ,{id: 726771, name: ("abhiii5459"), email_hash: ("55e6e48923f1a188f0acbefb4ea13a96"), reputation: 214, last_post: 1441571383}
+    
+    
+        ,{id: 814548, name: ("Vivek"), email_hash: ("ba1627f54e3b9c1d5f1ecb27b44b0b07"), reputation: 4071, last_post: 1404188515}
+    
+    
+        ,{id: 109749, name: ("jcolebrand"), email_hash: ("fc62b586b7a6e298551ac69188390bb8"), reputation: 13264, last_post: 1368727881}
+    
+    
+        ,{id: 5818303, name: ("abhi"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 11, last_post: 0}
+    
+    
+        ,{id: 4563124, name: ("alexis."), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 3, last_post: 0}
+    
+    
+        ,{id: 5107036, name: ("Chamie"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 1746316, name: ("Chris Rimmer"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 3, last_post: 0}
+    
+    
+        ,{id: 1992276, name: ("GanitK"), email_hash: ("95ab4b24c404ba6a5e92ea24ee0055b3"), reputation: 21, last_post: 0}
+    
+    
+        ,{id: 6370101, name: ("Howie T"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 439963, name: ("isvforall"), email_hash: ("da7c37782984010a9ab5ba3cb35b011e"), reputation: 4734, last_post: 0}
+    
+    
+        ,{id: 6489970, name: ("Jasmine Baik"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 356242, name: ("Kein"), email_hash: ("0ee87f2c1bd1455f49c08286284e64ef"), reputation: 487, last_post: 0}
+    
+    
+        ,{id: 5586625, name: ("Michael Andreev"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 5649351, name: ("Nick B"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 17, last_post: 0}
+    
+    
+        ,{id: 1368051, name: ("onlyAnt"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 1071090, name: ("Peter Hommel"), email_hash: ("!https://i.stack.imgur.com/vdLa6.jpg?s=128&g=1"), reputation: 815, last_post: 0}
+    
+    
+        ,{id: 342607, name: ("Phil"), email_hash: ("53127b5eeed281645de9ecc7921e5a17"), reputation: 144, last_post: 0}
+    
+    
+        ,{id: 1199590, name: ("Sandokan El Cojo"), email_hash: ("!https://i.stack.imgur.com/K556q.jpg?s=128&g=1"), reputation: 53, last_post: 0}
+    
+    
+        ,{id: 4108751, name: ("Slacker"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 6620444, name: ("Spynx"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+    
+        ,{id: 3602796, name: ("Will R."), email_hash: ("!https://i.stack.imgur.com/oNEEq.png?s=128&g=1"), reputation: 388, last_post: 0}
+    
+    
+        ,{id: 4040504, name: ("Zephyr"), email_hash: ("!http://cdn-chat.sstatic.net/chat/img/anon.png"), reputation: 1, last_post: 0}
+    
+]);
+
+    
+        CHAT.RoomUsers.update(0, {name: "", email_hash: "", reputation: 0 
+        });
+    
+
+            });
+        </script>
+        
+<script>
+</script>
+
+        <noscript>
+            <div class="notification">
+                Welcome to the chat! Unfortunately, you have JavaScript disabled, and thus this chat will not work.
+                If you would like to participate, please enable JavaScript in your browser and reload this page.
+            </div>
+        </noscript>
+        <input id="fkey" name="fkey" type="hidden" value="2442b1295780b8b86f92cb6d9835410f" />
+    </body>
+</html>
